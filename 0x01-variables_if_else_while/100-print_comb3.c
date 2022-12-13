@@ -9,26 +9,20 @@
 int main(void)
 {
 	int c;
-	int d = 0;
+	int d;
 
-	while (d < 10)
+	for (c = 0; d <= 9; c++)
 	{
-		c = 0;
-		while (c < 10)
+		for (d = c + 1; d <= 9; d++)
 		{
-			if (d != c && d < c)
-			{
-				putchar('0' + d);
-				putchar('0' + c);
-				if (c + d != 17)
+			putchar('0' + c);
+			putchar('0' + d);
+				if (c < 8)
 				{
-					putchar('.');
+					putchar(',');
 					putchar(' ');
 				}
-			}
-			c++;
 		}
-		c++;
 	}
 	putchar('\n');
 	return (0);
