@@ -1,36 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - main block
  * Return: Always 0
  */
-
 int main(void)
 {
-	int a = '0';
-	int b = '0';
-	int c = '0';
-	
-	for (c = '0'; c <= '0'; c++)
+	int c;
+	int d = 0;
+
+	while (d < 10)
 	{
-		for (b = '0'; b <= '0'; b++)
+		c = 0;
+		while (c < 10)
 		{
-			for (a = '0'; a <= '0'; a++)
+			if (d != c && d < c)
 			{
-				if (!((a == b) || (b == c) || (b > a) || (c > b)))
+				putchar('0' + d);
+				putchar('0' + c);
+				if (c + d != 17)
 				{
-					putchar(c);
-					putchar(b);
-					putchar(a);
-					if(!(a == '9' && c == '7' && b == '8'))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
+			c++;
 		}
+		d++;
 	}
 	putchar('\n');
 	return (0);
