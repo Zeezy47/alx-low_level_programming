@@ -8,20 +8,28 @@
 
 int main(void)
 {
-	int c;
-	int d;
-
-	for (c = 0; d <= 9; c++)
+	int a = '0';
+	int b = '0';
+	int c = '0';
+	
+	for (c = '0'; c <= '0'; c++)
 	{
-		for (d = c + 1; d <= 9; d++)
+		for (b = '0'; b <= '0'; b++)
 		{
-			putchar('0' + c);
-			putchar('0' + d);
-				if (c < 8)
+			for (a = '0'; a <= '0'; a++)
+			{
+				if (!((a == b) || (b == c) || (b > a) || (c > b)))
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(c);
+					putchar(b);
+					putchar(a);
+					if(!(a == '9' && c == '7' && b == '8'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
+			}
 		}
 	}
 	putchar('\n');
