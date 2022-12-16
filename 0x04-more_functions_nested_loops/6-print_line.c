@@ -2,7 +2,7 @@
 
 /**
  * print_line - function that draws a straight line in the terminal
- * @n: input number
+ * @n: print int
  * Return: Always 0
  */
 void print_line(int n)
@@ -11,11 +11,11 @@ void print_line(int n)
 
 	if (n > 0)
 	{
-		for (1 = 0; 1 < n; i++)
-			{
-				_putchar(95);
-			}
-			_putchar('\n');
+	for (i = 0; i < n; i++)
+	{
+		_putchar(95);
+	}
+		_putchar('\n');
 	}
 	else
 	{
