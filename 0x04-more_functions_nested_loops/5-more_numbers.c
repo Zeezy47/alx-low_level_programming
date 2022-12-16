@@ -3,23 +3,23 @@
 /**
  * more_numbers - function that prints 10 times the numbers, from 0 to 14
  * _putchar only 3 times
- * Return: 0-14 10 times
+ * Return: returns nothing
  */
 
 void more_numbers(void)
 {
-	int i, j;
+	int num1, num2;
 
-	for (j = 0; j <= 9; j++)
+	for (num1 = 0; num1 < 10; num1++)
 	{
-		for (i = 0; i <= 14; i++)
+		for (num2 = 0; num2 <= 14; num2++)
 		{
-			if (i > 9)
+			if (num2 > 9)
 			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
+				_putchar((num2 / 10) + '0');
 			}
+				_putchar((num2 % 10) + '0');
 		}
-		_putchar('\n');
+		_putchar(10);
 	}
 }
