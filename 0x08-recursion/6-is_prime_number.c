@@ -7,12 +7,13 @@ int actual_prime(int n, int i);
  * @n: The number to be checked.
  *
  * Return: If n is a prime number - 1.
+ * if n is not a prime numbere - 0.
  */
 int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	return (actual prime(n, n - 1));
+	return (actual_prime(n, n - 1));
 }
 
 /**
