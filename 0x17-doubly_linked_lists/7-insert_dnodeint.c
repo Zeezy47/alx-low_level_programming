@@ -7,7 +7,7 @@
  * @prev: link to prev node
  * @next: link to next node
  * Return: pointer to new node
- */
+*/
 dlistint_t *create_dnode(int n, dlistint_t *prev, dlistint_t *next)
 {
 	dlistint_t *new;
@@ -26,7 +26,7 @@ dlistint_t *create_dnode(int n, dlistint_t *prev, dlistint_t *next)
  * @idx: index for insertion of new node
  * @n: data for new node
  * Return: address of new node or NULL if error
- */
+*/
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *curr = *h, *localPrev = NULL;
