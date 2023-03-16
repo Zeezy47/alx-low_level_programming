@@ -6,7 +6,7 @@
  * @head:list
  * @index:given index
  * Return: -1 or 0
- */
+i*/
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *start;
@@ -50,7 +50,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
  *
  * @node:list
  * Return:unsigned int
- */
+*/
 unsigned int len_node(dlistint_t **node)
 {
 	unsigned int len = 0;
